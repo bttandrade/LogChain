@@ -8,6 +8,7 @@ import {
   signOut,
 } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-auth.js";
 
+
 const firebaseConfig = {
   apiKey: "AIzaSyC3U7YjxCDJCmjv_WeCmRr-MWk3m8PRi2Q",
   authDomain: "logichain-8a4e5.firebaseapp.com",

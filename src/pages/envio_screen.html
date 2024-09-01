@@ -98,9 +98,7 @@
                                 <label for="turno">Empresa:</label>
                                 <select name="turno" id="empresa" required>
                                     <option value="" disabled selected>Selecione</option>
-                                    <option value="manha">Manha</option>
-                                    <option value="tarde">Tarde</option>
-                                    <option value="noite">Noite</option>
+                                    <option value="transporte_la">Transporte L.A</option>
                                 </select>
                             </div>
                         </div>
@@ -121,14 +119,20 @@
                         <div class="box-div">
                             <h2>Selecione a(s) Box(es)</h2>
                             <div class="box">
-                                <ul class="box-ul"></ul>
+                                <ul class="box-ul" id="box-ul">
+            
+                                </ul>
+                                <button id="add_box" type="button">Adicionar</button>
                             </div>
                         </div>
                         <div class="resumo-div">
                             <h2>Resumo da encomenda</h2>
                             <div class="box">
-                                
-                            </div>
+                                <label for="boxes">Boxes selecionadas:</label>
+                                <ul class="box-ul" id="resumo-ul">
+
+                                </ul>
+                            </div> 
                         </div>
                         <div class="rota-div">
                             <h2>Rota</h2>
@@ -139,6 +143,9 @@
                         </div>
                         <button id="enviar_botao" type="submit"><i class="fa-solid fa-paper-plane"></i></button>
                     </form> 
+                    <div class="link-rota">
+                        <p id="link">Link: <span id="link-rota"></span></p>
+                    </div>
                 </div>
                 <div class="body-right">
                     <div id="mapa">
@@ -153,6 +160,7 @@
     </section>
     
     </div>
+    <script type="module" src="../js/envio.js"></script>
     <script type="module" src="../js/rota_mapa.js"></script>
 </body>
 </html>
